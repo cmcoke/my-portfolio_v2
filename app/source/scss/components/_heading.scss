@@ -21,7 +21,17 @@
         }
     }
 
-
+    &--contact{
+        font-size: responsive rem(25px) rem(33px);
+        font-weight: $bold;
+        text-transform: uppercase;
+        margin-top: 40px;
+    
+        @media screen and (min-width: 768px){
+          margin-bottom: 0px;
+        }
+    
+    }
 
 
 

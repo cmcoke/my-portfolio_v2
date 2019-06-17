@@ -1,0 +1,12 @@
+.btn{
+    color: white;
+
+    &--contact{
+        background-color: black;
+        padding: rem(10px) rem(30px);
+        margin: 11px 0px 50px 0px;
+        border: none;
+        cursor: pointer;
+    }
+    
+}

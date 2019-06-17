@@ -1,0 +1,18 @@
+.footer{
+    &__name{
+      font-size: rem(10px);
+      text-align: center;
+      font-weight: $semi-bold;
+      text-transform: uppercase;
+  
+      & a{
+        color: $blue;
+      }
+    }
+  
+    &__heart{
+        display: inline-block;
+        margin-bottom: -7px;
+    }
+  }
+  

@@ -1,0 +1,30 @@
+.intro{
+
+    &__container{
+        padding: 85px 0px 30px 0px ;
+
+        @media screen and (min-width: 800px){
+            padding: 170px 0px 110px 0px;
+        }
+    }
+
+    &__heading{
+        font-size: responsive rem(21px) rem(55px);
+        font-weight: $bold;
+        text-transform: uppercase;
+        width: 283px;
+        margin-bottom: 5px;
+        margin-top: 0;
+    
+        @media screen and (min-width: 400px){
+            width: 100%;
+        } 
+    }
+
+    &__description{
+        color: $dark-gray;
+        line-height: 25px;
+        font-size: responsive rem(16px) rem(19px);
+      }
+
+}

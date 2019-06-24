@@ -7,7 +7,7 @@
     border-bottom: 1px solid #F6F4F4;
     width: 100%;
     z-index: 1;
-    height: 80px;
+    height: 75px;
   }
 
   &__mobile-menu-container{
@@ -21,11 +21,24 @@
     }
   }
 
+  &__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 11px;
+  }
+
+  &__name{
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
   &__menu-icon{
   width: 20px;
   height: 19px;
   position: fixed;
-  top:35px;
+  top:25px;
   right: 23px;
   z-index: 3;
 

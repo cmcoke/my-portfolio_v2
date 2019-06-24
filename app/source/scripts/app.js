@@ -1,12 +1,13 @@
-    // /*===========Portfolio isotope js===========*/
-    // var item = document.querySelector('.portfolio_single_wrap');
-    // var iso = new Isotope (item, {
-    //     itemSelector: '.portfolio_single_item',
-    //     percentPosition: true,
-    //     layoutMode: 'masonry',
-    //     masonry: {
-    //         // use outer width of grid-sizer for columnWidth
-    //         columnWidth: 1
-    //     }
-    // });
+// smooth scrolling
+$(document).ready(function() {
 
+    var scrollLink = $('.scroll');
+  
+    scrollLink.click(function(e) {
+      e.preventDefault();
+      $('body,html').animate({
+        scrollTop: $(this.hash).offset().top - 100
+      }, 1000);
+    });
+  
+})

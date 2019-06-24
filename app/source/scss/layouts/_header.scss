@@ -25,7 +25,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 11px;
+    padding-top: 12px;
   }
 
   &__name{
@@ -87,7 +87,7 @@
       transform: rotate(45deg) translateY(-3px);
     }
 
-    .header__menu-icon__middle{
+    .header__menu-icon--middle{
       opacity: 0;
       transform: scaleX(0);
     }

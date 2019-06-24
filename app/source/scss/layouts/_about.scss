@@ -1,27 +1,20 @@
 .about{
-    padding: 0px 3px 0px 3px;
+    // padding: 0px 3px 0px 3px;
   
     @media screen and (min-width: 768px){
        padding: rem(5px) 0;
+       margin-top: -20px;
     }
-  
-    position: relative;
-  
-    &__heading{
-        color: $dark-gray;
-        text-align: center;
-        font-size: rem(12px);
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        margin-bottom: 20px;
-        
-        @media screen and (min-width: 400px){
-            text-align: left;
-            margin-bottom: 5px;
-        }
 
-
+    @media screen and (min-width: 1024px){
+      margin-top: -25px;
     }
+    
+    
+    @media screen and (min-width: 1028px){
+      margin-top: -90px;
+    }
+    
   
     &__bio{
       font-weight: $semi-bold;
@@ -30,7 +23,7 @@
       margin-top: -7px;
   
       @media screen and (min-width: 700px){
-        margin-bottom: 45px;
+        margin-bottom: 50px;
       }
   
     }

@@ -1,5 +1,31 @@
 .heading{
 
+    &--section{
+        color: $dark-gray;
+        text-align: center;
+        font-size: rem(12px);
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 11px;
+        
+        @media screen and (min-width: 700px){
+            text-align: left;
+            margin-bottom: 8px;
+        } 
+    }
+
+    &--projects{
+        @media screen and (max-width: 767px){
+            text-align: center;
+            margin-bottom: 20px;
+         }
+
+        @media screen and (min-width: 1024px){
+            margin-bottom: 20px;
+         }
+         
+    }
+
     &--about{
         font-size: rem(18px);
         font-weight: $bold;
@@ -17,18 +43,18 @@
 
         
         @media screen and (min-width: 800px) {
-            margin-top: -22px;
+            margin-top: -20px;
         }
     }
 
     &--contact{
-        font-size: responsive rem(25px) rem(33px);
+        font-size: responsive rem(25px) rem(35px);
         font-weight: $bold;
         text-transform: uppercase;
         margin-top: 40px;
     
         @media screen and (min-width: 768px){
-          margin-bottom: 0px;
+          margin-bottom: -10px;
         }
     
     }

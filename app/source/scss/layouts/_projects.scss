@@ -24,6 +24,7 @@
     &__single-item{
         flex: 0 0 100%;
         max-width: 100%;
+        
 
         @media (min-width:768px){
             
@@ -43,6 +44,7 @@
         position: relative;
         margin-bottom: 150px;
         z-index: 0;
+        border: 1px solid #F6F4F4;
 
         @media (max-width: 1024px){
             margin-bottom: 80px;
@@ -59,25 +61,32 @@
 
     }
 
+
     
     &__item .projects__info {
         
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        left:-40px;
+        // left:-1px;
         // width: 100%;
+        background-color: black;
+        padding-right: 44px;
+        padding-left: 10px;
+        
+       
 
         @media (min-width:768px){
-            left:-14px;
+            // left:-14px;
         }
 
         @media (min-width:1024px){
-            left:-4%;
+            // left:-4%;
         }
 
         @media (min-width:1262px){
-            left: -50px;
+            // left: -2px;
+
         }
 
       
@@ -86,20 +95,21 @@
     &__item .projects__info .projects__company {
         font-size: responsive rem(22px) rem(36px);
         line-height: responsive (28px) (40px);
-        color: black;
+        color: white;
         font-weight: $bold;
         margin-bottom: 0;
     }
     
     &__item .projects__info .projects__email-type {
         text-transform: uppercase;
-        font-size: 12px;
+        font-size: responsive rem(10px) rem(12px);
         letter-spacing: 2px;
-        color: black;
+        line-height: 18px;
+        color: yellow;
         margin-top: 5px;
     }
     
-    // VIEW EMAIL
+    // VIEW PROJECT
 
     &__item .projects__ve {
         position: absolute;
@@ -119,7 +129,7 @@
         }
 
         @media (min-width:1262px){
-            right: -121px;
+            right: -139px;
         }
 
     }
@@ -282,7 +292,7 @@
         }
 
         @media (min-width:1262px){
-            right: -121px;
+            right: -123px;
         }
 
     }

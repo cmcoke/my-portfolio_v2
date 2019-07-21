@@ -72,7 +72,7 @@ function css(done) {
       suffix: '.min'
     }))
     // uncomment the below script to minify the css when the project is completed
-    // .pipe(minifycss({compatibility: 'ie8'}))
+    .pipe(minifycss({compatibility: 'ie8'}))
     .pipe(sourcemaps.write())
     .pipe(dest('./app/build/assets/css'));
   done();

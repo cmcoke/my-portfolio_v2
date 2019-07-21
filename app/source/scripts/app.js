@@ -1,16 +1,23 @@
-// smooth scrolling
-$(document).ready(function() {
+// fade-in on load 
+$(document).ready(function(){
 
-    var scrollLink = $('.scroll');
+  $('body').css('display', 'none');
+  $('body').fadeIn(1300);
   
-    scrollLink.click(function(e) {
-      e.preventDefault();
-      $('body,html').animate({
-        scrollTop: $(this.hash).offset().top - 100
+});
+
+
+// smooth scrolling and active link
+$('a[href^="#"]').on('click', function(event) {
+  var target = $(this.getAttribute('href'));
+  if( target.length ) {
+      event.preventDefault();
+      $('html, body').stop().animate({
+          scrollTop: target.offset().top - 100
       }, 1000);
-    });
-  
-})
+  }
+});
+
 
 // mobile menu
 var navToggle = document.querySelector('.header__menu-icon');
@@ -21,3 +28,4 @@ navToggle.addEventListener('click', function() {
   navToggle.classList.toggle('header__menu-icon--close-x');
   overlay.toggle();
 });
+

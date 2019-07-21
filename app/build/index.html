@@ -215,7 +215,11 @@
             </div> -->
           </div>
 
-          <form action="POST" data-netlify="true" class="contact__container">
+          <form action="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" class="contact__container">
+            
+            <div class="contact__hidden">
+                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </div>
 
             <div class="contact__form contact__name">
               <input type="text" id="name" name="name" class="contact__field" placeholder="Name" required>
@@ -236,6 +240,8 @@
               <textarea id="message" name="message" class="contact__textarea" placeholder="Message" rows="6" required></textarea>
               <label for="message" class="contact__label">Message</label>
             </div>
+            
+            <div data-netlify-recaptcha="true"></div>
 
             <input type="submit" value="Send Message" class="btn btn--contact">
           </form>

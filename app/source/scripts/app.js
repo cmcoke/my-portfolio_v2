@@ -1,9 +1,6 @@
 // fade-in on load 
-$(document).ready(function(){
-
-  $('body').css('display', 'none');
-  $('body').fadeIn(1300);
-  
+$(function() {
+  $('body').removeClass('fade-out');
 });
 
 

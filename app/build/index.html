@@ -12,6 +12,8 @@
 </head>
 
 <body>
+  <script>document.body.className += ' fade-out';</script>
+
   <div class="content">
 
     <!-- HEADER SECTION  -->
@@ -213,25 +215,25 @@
             </div> -->
           </div>
 
-          <form action="#" class="contact__container">
+          <form action="POST" data-netlify="true" class="contact__container">
 
             <div class="contact__form contact__name">
-              <input type="text" id="name" class="contact__field" placeholder="Name" required>
+              <input type="text" id="name" name="name" class="contact__field" placeholder="Name" required>
               <label for="name" class="contact__label">Name</label>
             </div>
 
             <div class="contact__form contact__email">
-              <input type="email" id="email" class="contact__field" placeholder="Email" autocomplete="none" required>
+              <input type="email" id="email" name="email" class="contact__field" placeholder="Email" autocomplete="none" required>
               <label for="email" class="contact__label">Email</label>
             </div>
 
             <div class="contact__form contact__subject">
-              <input type="text" id="subject" class="contact__field" placeholder="Subject" required>
+              <input type="text" id="subject" name="subject" class="contact__field" placeholder="Subject" required>
               <label for="subject" class="contact__label">Subject</label>
             </div>
 
             <div class="contact__form contact__message">
-              <textarea id="message" class="contact__textarea" placeholder="Message" rows="6" required></textarea>
+              <textarea id="message" name="message" class="contact__textarea" placeholder="Message" rows="6" required></textarea>
               <label for="message" class="contact__label">Message</label>
             </div>
 

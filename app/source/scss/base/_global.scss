@@ -12,9 +12,14 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  opacity: 1; /* this is for fade-in effect on page */  
+  transition: 1s opacity; /* this is for fade-in effect on page */ 
 }
 
-
+body.fade-out {
+  opacity: 0; /* this is for fade-in effect on page */
+  transition: none; /* this is for fade-in effect on page */
+}
 
 .content {
   flex: 1 0 auto;

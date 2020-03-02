@@ -1,0 +1,26 @@
+.column{
+
+  &--projects{
+
+    /* @media screen and (min-width: 500px){
+      margin-right: 25px;
+    } */
+  }
+
+  &--process{
+    margin-bottom: 10px;
+  }
+
+  &--process-width{
+
+    @media screen and (min-width: 768px){
+      width: 50%;
+    }
+  }
+
+  &--about{
+    margin-bottom: 10px;
+  }
+
+
+}

@@ -1,0 +1,49 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+/* make sticky footer  -- start */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+/* make sticky footer  -- end */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.img-block{
+  display: block;
+}

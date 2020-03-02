@@ -1,0 +1,180 @@
+.projects {
+
+  &__item{
+    position: relative;
+    margin-bottom: 30px;
+    border: 1px solid #EDEDED;
+
+    @media screen and (min-width: 768px){
+      margin-bottom: 60px;
+    }
+  }
+
+  &__info{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+    padding-right: 30px;
+    padding-left: 20px;
+  }
+
+  &__company{
+    font-size: responsive 17px 36px;
+    line-height: responsive 28px 40px;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+
+
+  &__type{
+    text-transform: uppercase;
+    font-size: responsive 10px 12px;
+    letter-spacing: 2px;
+    line-height: 18px;
+    color: yellow;
+    margin-top: 5px;
+  }
+
+  &__view{
+    position: absolute;
+    letter-spacing: 2px;
+
+    @media screen and (min-width: 800px){
+      opacity: 0;
+      transition: 0.3s;
+    }
+
+  }
+
+  &__view--gq{
+    bottom: 20%;
+
+    @media screen and (min-width: 400px){
+      bottom: 30%;
+    }
+
+    @media screen and (min-width: 768px){
+      bottom: 20%;
+    }
+
+    @media screen and (min-width: 1044px){
+      bottom: 27%;
+    }
+  }
+
+
+  &__view--psvr{
+    bottom: 20%;
+
+    @media screen and (min-width: 400px){
+      bottom: 30%;
+    }
+
+    @media screen and (min-width: 500px){
+      bottom: 33%;
+    }
+
+    @media screen and (min-width: 768px){
+      bottom: 27%;
+    }
+
+    @media screen and (min-width: 1044px){
+      bottom: 32%;
+    }
+
+  }
+
+  &__view--nike{
+    bottom: 22%;
+
+    @media screen and (min-width: 400px){
+      bottom: 30%;
+    }
+
+    @media screen and (min-width: 500px){
+      bottom: 35%;
+    }
+
+    @media screen and (min-width: 768px){
+      bottom: 30%;
+    }
+
+    @media screen and (min-width: 1044px){
+      bottom: 34%;
+    }
+
+  }
+
+  &__view--dsc{
+    bottom: 12%;
+
+    @media screen and (min-width: 400px){
+      bottom: 20%;
+    }
+
+    @media screen and (min-width: 500px){
+      bottom: 25%;
+    }
+
+    @media screen and (min-width: 768px){
+      bottom: 15%;
+    }
+
+    @media screen and (min-width: 1044px){
+      bottom: 25%;
+    }
+
+  }
+
+  &__site, &__code{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 10px;
+    transition:.7s ease all;
+  }
+
+  &__site:hover, &__code:hover{
+    color: yellow;
+  }
+
+
+  &__site{
+    margin-right: 11px;
+    margin-left: 5px;
+  }
+
+  &__item:hover &__view{
+
+    @media screen and (min-width: 768px){
+      opacity: 1;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

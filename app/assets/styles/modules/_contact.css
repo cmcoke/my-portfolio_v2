@@ -1,0 +1,113 @@
+.contact {
+    border-top: 1px solid #EDEDED;
+    padding: 0px 5px;
+
+    @media screen and (min-width: 768px){
+      padding: responsive 11px 10px;
+    }
+
+    &__text-content {
+      font-weight: 600;
+      margin-top: -10px;
+
+      @media screen and (min-width: 768px){
+        margin-top: 7px;
+      }
+    }
+
+    &__form {
+      position: relative;
+      padding: 18px 0px;
+      margin-top: 10px;
+    }
+
+    &__field {
+      font-family: inherit;
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid #D2D2D2;
+      outline: 0;
+      font-size: 16px;
+      padding: 11px 0;
+      background: transparent;
+      transition: border-color 0.2s;
+    }
+
+    &__textarea {
+      font-family: inherit;
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid #D2D2D2;
+      outline: 0;
+      font-size: 16px;
+      padding: 7px 0;
+      resize: none;
+      background: transparent;
+      transition: border-color 0.2s;
+
+      @media screen and (min-width: 1052px){
+        width: 100%;
+      }
+
+      @media screen and (min-width: 1298px){
+        width: 743px;
+      }
+
+    }
+
+    &__field::placeholder,
+    &__textarea::placeholder {
+      color: transparent;
+    }
+
+    &__field:placeholder-shown~&__label,
+    &__textarea:placeholder-shown~&__label {
+      font-size: 16px;
+      cursor: text;
+      top: 20px;
+    }
+
+    &__field:focus~&__label,
+    &__textarea:focus~&__label,
+    label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 12px;
+      color: #6F6E6E;
+    }
+
+    &__field:focus~&__label,
+    &__textarea:focus~&__label {
+      color: $blue;
+    }
+
+    &__field:focus,
+    &__textarea:focus {
+      border-bottom: 1px solid black;
+    }
+
+    & [type='submit']{
+      font-family: 'Raleway', sans-serif;
+    }
+
+
+    &__social {
+      margin-bottom: 5px;
+      text-align: center;
+
+      @media screen and (min-width: 768px){
+        text-align: left;
+      }
+
+      & a:nth-child(2){
+        margin-left: 13px;
+      }
+    }
+
+    &__hidden{
+      display: none;
+    }
+
+  }

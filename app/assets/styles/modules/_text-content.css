@@ -1,0 +1,48 @@
+.text-content{
+  color: #303030;
+  font-weight: 600;
+
+  &--process{
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+
+  }
+
+  &--about{
+    line-height: 30px;
+    margin-bottom: 30px;
+    margin-top: -7px;
+    text-align: center;
+
+    @media screen and (min-width: 700px){
+      margin-bottom: 60px;
+      text-align: left;
+    }
+  }
+
+  &--contact{
+    color: #171717;
+    width: 100%;
+    line-height: 28px;
+    margin-top: -11px;
+    margin-bottom: 25px;
+    text-align: center;
+
+    @media screen and (min-width: 768px){
+      text-align: left;
+    }
+
+    @media screen and (min-width: 1301px){
+      width: 320px;
+      font-size: 16px;
+      line-height: 25px;
+    }
+
+  }
+
+}

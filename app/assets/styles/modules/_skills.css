@@ -1,0 +1,9 @@
+.skills {
+  margin: 10px 0 0 0;
+  padding: 0;
+  text-align: center;
+
+  & li {
+    margin-bottom: 13px;
+  }
+}

@@ -13,8 +13,8 @@ body {
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
   animation: fadeInAnimation ease 4s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  /* animation-iteration-count: 1;
+  animation-fill-mode: forwards; */
 }
 
 @keyframes fadeInAnimation {
